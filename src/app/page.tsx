@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getAllProducts, getAllCategories } from "@/lib/data";
+import { getAllCategories } from "@/lib/data";
 
 export default async function Home() {
-  const productsData = getAllProducts();
   const categoriesData = getAllCategories();
-  const featuredProducts = productsData.slice(0, 4);
 
   return (
     <div className="flex flex-col">
@@ -86,50 +84,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* FEATURED PRODUCT GRID */}
-      <section className="px-6 py-24 md:px-12">
-        <div className="mb-16">
-          <div className="font-mono text-xs tracking-widest uppercase mb-4 text-ebony/70">
-            This Week
-          </div>
-          <h2 className="font-brand text-4xl md:text-5xl font-[800] tracking-tight uppercase">
-            Currently on the Edit.
-          </h2>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-          {featuredProducts.map((product: any, idx: number) => (
-            <Link 
-              key={product.id} 
-              href={`/product/${product.id}`}
-              className="group flex flex-col focus-visible:outline-none"
-            >
-              <div className="relative aspect-[4/5] w-full mb-6 overflow-hidden border border-ebony">
-                <Image 
-                  src={product.image} 
-                  alt={product.name} 
-                  fill 
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-                <div className="absolute top-4 left-4 bg-site-bg border border-ebony px-2 py-1 font-mono text-xs z-10">
-                  0{idx + 1}
-                </div>
-              </div>
-              
-              <div className="flex flex-col gap-2 group-hover:text-amber transition-colors">
-                <div className="flex justify-between items-start font-ui text-sm uppercase tracking-wide font-medium">
-                  <h3 className="truncate pr-4">{product.name}</h3>
-                  <span className="font-mono">{product.price}</span>
-                </div>
-                <div className="font-mono text-xs text-ebony/60 uppercase">
-                  {product.category}
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+
     </div>
   );
 }
