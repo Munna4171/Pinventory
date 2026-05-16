@@ -21,13 +21,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const productsData = getAllProducts();
   
   // Find category metadata if it's a specific category, else use generic for "men"
-  const categoryMeta = categoriesData.find(c => c.slug === slug);
+  const categoryMeta = categoriesData.find((c: any) => c.slug === slug);
   const title = categoryMeta ? categoryMeta.name : (slug === "men" ? "Men" : slug);
   const description = categoryMeta ? categoryMeta.description : "All curated essentials for this section.";
 
   // Filter products by either sex (if 'men') or category
   const filteredProducts = productsData.filter(
-    (product) => product.category === slug || product.sex === slug
+    (product: any) => product.category === slug || product.sex === slug
   );
 
   if (filteredProducts.length === 0 && !categoryMeta && slug !== "men") {
@@ -54,7 +54,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       {/* PRODUCT GRID */}
       <section className="px-6 py-24 md:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-          {filteredProducts.map((product, idx) => (
+          {filteredProducts.map((product: any, idx: number) => (
             <Link 
               key={product.id} 
               href={`/product/${product.id}`}

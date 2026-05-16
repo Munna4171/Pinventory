@@ -27,14 +27,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   // Find related products
   const relatedProducts = product.relatedItems
-    .map((relatedItem) => {
-      const item = productsData.find((p) => p.id === relatedItem.id);
+    .map((relatedItem: any) => {
+      const item = productsData.find((p: any) => p.id === relatedItem.id);
       if (item) {
         return { ...item, relationship: relatedItem.relationship };
       }
       return null;
     })
-    .filter((item) => item !== null);
+    .filter((item: any) => item !== null);
 
   return (
     <div className="flex flex-col">
@@ -91,7 +91,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-            {relatedProducts.map((relatedItem, idx) => (
+            {relatedProducts.map((relatedItem: any, idx: number) => (
               <Link 
                 key={relatedItem.id} 
                 href={`/product/${relatedItem.id}`}
