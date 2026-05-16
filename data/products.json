@@ -1,26 +1,11 @@
 [
   {
-    "id": "man-minimalist-overshirt-01",
-    "name": "Relaxed Linen Overshirt",
-    "price": "$68",
-    "amazonLink": "https://amazon.com/dp/B000000001/?tag=placeholder",
-    "image": "https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?q=80&w=600&h=750&auto=format&fit=crop",
-    "category": "tops",
-    "sex": "men",
-    "relatedItems": [
-      {
-        "id": "man-low-sneakers-01",
-        "relationship": "Pairs perfectly with",
-        "type": "footwear"
-      }
-    ]
-  },
-  {
     "id": "premium-minimalist-shirt",
     "name": "Premium Minimalist Casual Shirt",
     "price": "₹2,499",
     "amazonLink": "https://www.amazon.in/dp/B0GZ3WYPZL?th=1&psc=1",
     "image": "/images/minimalist-shirt.jpg",
+    "section": "men",
     "category": "tops",
     "relatedItems": [
       {
@@ -36,6 +21,7 @@
     "price": "₹3,299",
     "amazonLink": "https://www.amazon.in/Rare-Rabbit-Baggy-Plain-Trouser/dp/B0G52CL2DL?th=1&psc=1",
     "image": "/images/baggy-trouser.jpg",
+    "section": "men",
     "category": "pants",
     "relatedItems": [
       {
@@ -46,51 +32,23 @@
     ]
   },
   {
-    "id": "man-low-sneakers-01",
-    "name": "Essential Low Top Sneaker",
-    "price": "$125",
-    "amazonLink": "https://amazon.com/dp/B000000002/?tag=placeholder",
-    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&h=750&auto=format&fit=crop",
-    "category": "accessories",
-    "sex": "men",
-    "relatedItems": [
-      {
-        "id": "man-minimalist-overshirt-01",
-        "relationship": "A great match for",
-        "type": "tops"
-      }
-    ]
+    "id": "women-ribbed-midi-dress",
+    "name": "Ribbed Knit Midi Dress",
+    "price": "₹2,899",
+    "amazonLink": "https://amazon.com/dp/placeholder",
+    "image": "/images/placeholder.jpg",
+    "section": "women",
+    "category": "dresses",
+    "relatedItems": []
   },
   {
-    "id": "man-tailored-trousers-01",
-    "name": "Relaxed Wool Trousers",
-    "price": "$85",
-    "amazonLink": "https://amazon.com/dp/B000000003/?tag=placeholder",
-    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=600&h=750&auto=format&fit=crop",
-    "category": "pants",
-    "sex": "men",
-    "relatedItems": [
-      {
-        "id": "man-low-sneakers-01",
-        "relationship": "Pairs perfectly with",
-        "type": "footwear"
-      }
-    ]
-  },
-  {
-    "id": "man-cashmere-beanie-01",
-    "name": "Ribbed Cashmere Beanie",
-    "price": "$45",
-    "amazonLink": "https://amazon.com/dp/B000000004/?tag=placeholder",
-    "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=600&h=750&auto=format&fit=crop",
-    "category": "accessories",
-    "sex": "men",
-    "relatedItems": [
-      {
-        "id": "man-minimalist-overshirt-01",
-        "relationship": "Completes the look",
-        "type": "tops"
-      }
-    ]
+    "id": "women-leather-crossbody",
+    "name": "Minimalist Leather Crossbody",
+    "price": "₹4,500",
+    "amazonLink": "https://amazon.com/dp/placeholder",
+    "image": "/images/placeholder.jpg",
+    "section": "women",
+    "category": "bags",
+    "relatedItems": []
   }
 ]

@@ -64,15 +64,10 @@ export default function RootLayout({
             Pinventory
           </Link>
           <nav className="flex items-center gap-6 text-sm font-ui uppercase tracking-wider">
-            <Link href="/" className="hover:text-amber transition-colors">Shop</Link>
             <Link href="/category/men" className="hover:text-amber transition-colors">Men</Link>
             <Link href="/category/women" className="hover:text-amber transition-colors">Women</Link>
             <Link href="/category/accessories" className="hover:text-amber transition-colors">Accessories</Link>
-            <Link href="#" className="hover:text-amber transition-colors">Journal</Link>
           </nav>
-          <div className="font-mono text-xs uppercase tracking-widest text-ebony/60">
-            ISSUE 01 &bull; 2026
-          </div>
         </header>
 
         <main className="flex-grow">

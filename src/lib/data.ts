@@ -4,6 +4,17 @@ import path from 'path';
 const productsFilePath = path.join(process.cwd(), 'data', 'products.json');
 const categoriesFilePath = path.join(process.cwd(), 'data', 'categories.json');
 
+export interface Product {
+  id: string;
+  name: string;
+  price: string;
+  amazonLink: string;
+  image: string;
+  section: string;
+  category: string;
+  relatedItems?: any[];
+}
+
 export function getAllProducts() {
   const fileContents = fs.readFileSync(productsFilePath, 'utf8');
   return JSON.parse(fileContents);
