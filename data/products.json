@@ -1,0 +1,66 @@
+[
+  {
+    "id": "man-minimalist-overshirt-01",
+    "name": "Relaxed Linen Overshirt",
+    "price": "$68",
+    "amazonLink": "https://amazon.com/dp/B000000001/?tag=placeholder",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?q=80&w=600&h=750&auto=format&fit=crop",
+    "category": "tops",
+    "sex": "men",
+    "relatedItems": [
+      {
+        "id": "man-low-sneakers-01",
+        "relationship": "Pairs perfectly with",
+        "type": "footwear"
+      }
+    ]
+  },
+  {
+    "id": "man-low-sneakers-01",
+    "name": "Essential Low Top Sneaker",
+    "price": "$125",
+    "amazonLink": "https://amazon.com/dp/B000000002/?tag=placeholder",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&h=750&auto=format&fit=crop",
+    "category": "accessories",
+    "sex": "men",
+    "relatedItems": [
+      {
+        "id": "man-minimalist-overshirt-01",
+        "relationship": "A great match for",
+        "type": "tops"
+      }
+    ]
+  },
+  {
+    "id": "man-tailored-trousers-01",
+    "name": "Relaxed Wool Trousers",
+    "price": "$85",
+    "amazonLink": "https://amazon.com/dp/B000000003/?tag=placeholder",
+    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=600&h=750&auto=format&fit=crop",
+    "category": "pants",
+    "sex": "men",
+    "relatedItems": [
+      {
+        "id": "man-low-sneakers-01",
+        "relationship": "Pairs perfectly with",
+        "type": "footwear"
+      }
+    ]
+  },
+  {
+    "id": "man-cashmere-beanie-01",
+    "name": "Ribbed Cashmere Beanie",
+    "price": "$45",
+    "amazonLink": "https://amazon.com/dp/B000000004/?tag=placeholder",
+    "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=600&h=750&auto=format&fit=crop",
+    "category": "accessories",
+    "sex": "men",
+    "relatedItems": [
+      {
+        "id": "man-minimalist-overshirt-01",
+        "relationship": "Completes the look",
+        "type": "tops"
+      }
+    ]
+  }
+]

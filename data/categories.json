@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "tops",
+    "name": "Tops",
+    "description": "Essential shirting and knitwear"
+  },
+  {
+    "slug": "pants",
+    "name": "Pants",
+    "description": "Tailored and relaxed legwear"
+  },
+  {
+    "slug": "accessories",
+    "name": "Accessories",
+    "description": "Footwear and daily carry"
+  }
+]
