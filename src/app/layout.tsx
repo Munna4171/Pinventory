@@ -25,16 +25,22 @@ export const metadata: Metadata = {
     title: "Pinventory | Minimalist Men's Fashion",
     description: "The premium gateway to minimalist men's fashion. Curated looks and essentials.",
     type: "website",
-    url: "https://pinventory.example.com",
+    url: "https://pinventory-5hr5.vercel.app", // Updated to your live Vercel URL
     siteName: "Pinventory",
     images: [
       {
-        url: "https://pinventory.example.com/og-image.jpg",
+        url: "https://pinventory-5hr5.vercel.app/og-image.jpg", // Updated to your live Vercel URL
         width: 1200,
         height: 630,
         alt: "Pinventory Cover",
       },
     ],
+  },
+  verification: {
+    other: {
+      // Replaced the placeholder with your actual Pinterest code
+      "p:domain_verify": "2b35d9cc56f50526ac82aa5aec6d6e44",
+    },
   },
 };
 
@@ -48,6 +54,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${manrope.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
+      {/* Bulletproof manual head injection to guarantee Pinterest sees the tag */}
+      <head>
+        <meta name="p:domain_verify" content="2b35d9cc56f50526ac82aa5aec6d6e44" />
+      </head>
       <body className="min-h-full flex flex-col font-ui text-ebony bg-site-bg">
         <header className="px-6 py-8 md:px-12 md:py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-ebony">
           <Link href="/" className="font-brand font-[800] text-3xl tracking-tight uppercase">

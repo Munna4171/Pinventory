@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { getAllProducts, getProductById } from "@/lib/data";
 
 interface ProductPageProps {
@@ -14,6 +15,37 @@ export async function generateStaticParams() {
   return productsData.map((product: any) => ({
     id: product.id,
   }));
+}
+
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const product = getProductById(id);
+
+  if (!product) {
+    return {
+      title: "Product Not Found",
+    };
+  }
+
+  const title = `${product.name} | Pinventory`;
+  const description = `Shop the ${product.name} at Pinventory. A curated selection of minimalist menswear essentials.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [
+        {
+          url: product.image,
+          width: 800,
+          height: 1000,
+          alt: product.name,
+        },
+      ],
+    },
+  };
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
