@@ -16,6 +16,36 @@
     ]
   },
   {
+    "id": "premium-minimalist-shirt",
+    "name": "Premium Minimalist Casual Shirt",
+    "price": "₹2,499",
+    "amazonLink": "https://www.amazon.in/dp/B0GZ3WYPZL?th=1&psc=1",
+    "image": "/images/minimalist-shirt.jpg",
+    "category": "tops",
+    "relatedItems": [
+      {
+        "id": "rare-rabbit-baggy-trouser",
+        "relationship": "Pairs perfectly with",
+        "type": "pants"
+      }
+    ]
+  },
+  {
+    "id": "rare-rabbit-baggy-trouser",
+    "name": "Rare Rabbit Baggy Plain Trouser",
+    "price": "₹3,299",
+    "amazonLink": "https://www.amazon.in/Rare-Rabbit-Baggy-Plain-Trouser/dp/B0G52CL2DL?th=1&psc=1",
+    "image": "/images/baggy-trouser.jpg",
+    "category": "pants",
+    "relatedItems": [
+      {
+        "id": "premium-minimalist-shirt",
+        "relationship": "Complete the look with",
+        "type": "tops"
+      }
+    ]
+  },
+  {
     "id": "man-low-sneakers-01",
     "name": "Essential Low Top Sneaker",
     "price": "$125",
