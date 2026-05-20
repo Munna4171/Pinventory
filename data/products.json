@@ -62,5 +62,37 @@
         "type": "apparel"
       }
     ]
+  },
+  {
+    "id": "womens-pink-floral-kurti",
+    "name": "Women’s Pink Floral Printed Long Kurti",
+    "price": "₹399",
+    "amazonLink": "https://amzn.to/4fxhvoJ",
+    "image": "/images/pink-floral.jpg",
+    "section": "women",
+    "category": "apparel",
+    "relatedItems": [
+      {
+        "id": "womens-wide-leg-jeans",
+        "relationship": "Pairs perfectly with",
+        "type": "apparel"
+      }
+    ]
+  },
+  {
+    "id": "womens-wide-leg-jeans",
+    "name": "Women's Wide Leg Mid Rise Regular Length Denim Jeans",
+    "price": "₹999",
+    "amazonLink": "https://amzn.to/4tPKEPn",
+    "image": "/images/blue-pant.jpg",
+    "section": "women",
+    "category": "apparel",
+    "relatedItems": [
+      {
+        "id": "womens-pink-floral-kurti",
+        "relationship": "Complete the look with",
+        "type": "apparel"
+      }
+    ]
   }
 ]
