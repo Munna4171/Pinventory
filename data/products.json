@@ -32,13 +32,35 @@
     ]
   },
   {
-    "id": "women-leather-crossbody",
-    "name": "Minimalist Leather Crossbody",
-    "price": "₹4,500",
-    "amazonLink": "https://amazon.com/dp/placeholder",
-    "image": "/images/placeholder.jpg",
+    "id": "womens-look-item-01",
+    "name": "GoSriKi Women's Rayon Viscose Printed Kurti ",
+    "price": "₹509",
+    "amazonLink": "https://amzn.to/4uR89su",
+    "image": "/images/women-1.png",
     "section": "women",
-    "category": "bags",
-    "relatedItems": []
+    "category": "apparel",
+    "relatedItems": [
+      {
+        "id": "womens-look-item-02",
+        "relationship": "Pairs perfectly with",
+        "type": "accessories"
+      }
+    ]
+  },
+  {
+    "id": "womens-look-item-02",
+    "name": "Sleeveless Printed Long Kurti with White Palazzo Set, Black and White, Rayon, Ethnic Wear",
+    "price": "₹499",
+    "amazonLink": "https://amzn.to/4tJ7CI0",
+    "image": "/images/women-2.png",
+    "section": "women",
+    "category": "accessories",
+    "relatedItems": [
+      {
+        "id": "womens-look-item-01",
+        "relationship": "Complete the look with",
+        "type": "apparel"
+      }
+    ]
   }
 ]
