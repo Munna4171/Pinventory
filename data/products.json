@@ -94,5 +94,37 @@
         "type": "apparel"
       }
     ]
+  },
+  {
+    "id": "womens-anubhuti-two-piece",
+    "name": "Comfortable Loose Fitting Two-Piece Set",
+    "price": "₹1,599",
+    "amazonLink": "https://amzn.to/4tTXOeu",
+    "image": "/images/two-piece-set.png",
+    "section": "women",
+    "category": "apparel",
+    "relatedItems": [
+      {
+        "id": "womens-floral-sleeveless",
+        "relationship": "You might also like",
+        "type": "apparel"
+      }
+    ]
+  },
+  {
+    "id": "womens-floral-sleeveless",
+    "name": "Floral Printed Sleeveless Dress",
+    "price": "₹299",
+    "amazonLink": "https://amzn.to/43mqkub",
+    "image": "/images/floral-dress.png",
+    "section": "women",
+    "category": "apparel",
+    "relatedItems": [
+      {
+        "id": "womens-anubhuti-two-piece",
+        "relationship": "You might also like",
+        "type": "apparel"
+      }
+    ]
   }
 ]
